@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Mykhailo Vorontsov</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f9f9f9;
+        padding: 20px;
+      }
+
+      h1 {
+        color: #2c3e50;
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: #36ad9b;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .colums {
+        column-count: 2;
+      }
+
+      .photo {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        display: block;
+      }
+
+      h2,
+      h3 {
+        text-align: center;
+      }
+
+      .container {
+        max-width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        background: white;
+        padding: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        gap: 30px;
+      }
+
+      .section {
+        margin-bottom: 25px;
+      }
+      .job,
+      .education-item {
+        margin-bottom: 20px;
+      }
+
+      .job-title {
+        font-weight: bold;
+        color: #34495e;
+        margin-bottom: 5px;
+      }
+
+      .company {
+        color: #3498db;
+        margin-bottom: 5px;
+        font-size: 14px;
+      }
+
+      .date {
+        color: #95a5a6;
+        font-style: italic;
+        margin-bottom: 8px;
+        font-size: 13px;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+      }
+
+      .skill-category {
+        margin-bottom: 15px;
+      }
+
+      .skill-category h3 {
+        font-size: 14px;
+        color: #34495e;
+        margin-bottom: 8px;
+      }
+
+      .skills-container {
+        column-count: 2;
+      }
+
+      .skill-list {
+        list-style-type: none;
+      }
+
+      .skill-list li {
+        margin-bottom: 5px;
+        padding-left: 15px;
+        position: relative;
+        font-size: 14px;
+      }
+
+      .skill-list li:before {
+        content: "•";
+        color: #97b4c7;
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+      }
+
+      .languages {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .language-item {
+        background: #dae9f3;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-size: 13px;
+      }
+
+      .personal-qualities {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .quality {
+        background: #dae9f3;
+        padding: 4px 8px;
+        border-radius: 3px;
+        font-size: 12px;
+      }
+
+      .sidebar-skill-list {
+        list-style-type: none;
+      }
+
+      .sidebar-skill-list li {
+        margin-bottom: 6px;
+        padding-left: 15px;
+        position: relative;
+        font-size: 13px;
+      }
+
+      .sidebar-skill-list li:before {
+        content: "▸";
+        color: #3498db;
+        position: absolute;
+        left: 0;
+      }
+
+      .sidebar a {
+        color: #ecf0f1;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @media print {
+        body {
+          background: white;
+          padding: 0;
+        }
+        .container {
+          box-shadow: none;
+          padding: 20px;
+          grid-template-columns: 200px 1fr;
+        }
+        .sidebar {
+          background: #2c3e50 !important;
+          color: white !important;
+          -webkit-print-color-adjust: exact;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+        .sidebar {
+          order: 2;
+        }
+        .main-content {
+          order: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="colums">
+        <div class="contact-info">
+          <h1>Mykhailo Vorontsov</h1>
+          <div class="contact-item">Geboren: 9 Februar 1985. Ukraine</div>
+          <div class="contact-item">
+            Anschrift: 65197, Wiesbaden, Deutschland
+          </div>
+          <div class="contact-item">Telefon: +491758821634 (WhatsApp)</div>
+          <div class="contact-item">E-Mail: mvorontsov713@gmail.com</div>
+          <div class="contact-item">
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/mykhailo-michael-vorontsov-57b7ba198"
+              target="_blank"
+              >Profil ansehen</a
+            >
+          </div>
+        </div>
+        <div>
+          <img src="mvorontsov.jpg" alt="Mykhailo Vorontsov" class="photo" /> 
+          <!-- <img src="https://media.licdn.com/dms/image/v2/D4E03AQFf7syQVIQOrA/profile-displayphoto-crop_800_800/B4EZkVXk2XIsAM-/0/1757000126849?e=1764806400&v=beta&t=txLwTnk7tBWNebsikoklc_y1CPoN3t5l2VIFXLIpruQ" alt="Mykhailo Vorontsov" class="photo" /> -->
+        </div>
+      </div>
+      <h2>Frontend Entwickler (ReactJS)</h2>
+
+      <section class="section">
+        <h3>Arbeitserfahrung</h3>
+        <div class="job">
+          <div class="job-title">Fullstack Entwickler (Minijob)</div>
+          <div class="company">UpTeam GmbH, Berlin, Deutschland</div>
+          <div class="date">Ab 09/2025 – aktuell</div>
+        </div>
+        <div class="job">
+          <div class="job-title">Webentwickler (Praktikant)</div>
+          <div class="company">Pitrimka Verein, Wiesbaden, Deutschland</div>
+          <div class="date">Ab 04/2025 – aktuell</div>
+        </div>
+        <div class="job">
+          <div class="job-title">Webentwickler (WordPress)</div>
+          <div class="company">
+            Website
+            <a href="https://dovira.news/" target="_blank"
+              >https://dovira.news/</a
+            >
+          </div>
+          <div class="date">Ab 05/2023 – 07/2023</div>
+        </div>
+        <div class="job">
+          <div class="job-title">Front-End Entwickler (React.js)</div>
+          <div class="company">
+            Beep! Club Limited, England –
+            <a href="https://beep-product-website.web.app/" target="_blank"
+              >https://beep.club/</a
+            >
+          </div>
+          <div class="date">05/2022 – 01/2023</div>
+          <ul class="skill-list">
+            <li>Website-Layout vom Start bis zur Produktion</li>
+            <li>
+              Technologien: React.js, Typescript, SCSS, MobX, Material UI,
+              React-slick, Firebase, i18next, Lodash
+            </li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Webentwickler (WordPress/Frontend)</div>
+          <div class="company">
+            ThemeREX Web Studio Mykolajiw - Ukraine (Envato - Australien)
+          </div>
+          <div class="date">02/2021 – 02/2022</div>
+          <ul class="skill-list">
+            <li>
+              Layout von 15-seitigen Websites (Theme-Kit) – WordPress
+              (Elementor, WooCommerce)
+            </li>
+            <div>
+              Template Kit. Beispiele:
+              <a
+                href="http://template-kit.themerex.net/mystik/template-kit/home-1/"
+                target="_blank"
+                >Mystik,
+              </a>
+              <a
+                href="http://template-kit.themerex.net/yeasty/template-kit/home-1/"
+                target="_blank"
+                >Yeasty,
+              </a>
+              <a
+                href="https://template-kit.ancorathemes.com/nelson/template-kit/home-1/"
+                target="_blank"
+                >Nelson,
+              </a>
+              <a
+                href="http://template-kit.themerex.net/digie/template-kit/home-1/"
+                target="_blank"
+                >Digie,
+              </a>
+              <a
+                href="http://template-kit.axiomthemes.com/techie/template-kit/"
+                target="_blank"
+                >Techie,
+              </a>
+              <a
+                href="http://template-kit.axiomthemes.com/busy/template-kit/home-1/"
+                target="_blank"
+                >Busy,
+              </a>
+              <a
+                href="https://template-kit.ancorathemes.com/maxinet-internet-provider/template-kit/home-1-pro/"
+                target="_blank"
+                >Maxinet,
+              </a>
+              <a
+                href="http://template-kit.axiomthemes.com/hoverex/template-kit/home-1/"
+                target="_blank"
+                >Hoverex,
+              </a>
+              <a
+                href="https://template-kit.ancorathemes.com/gourmet/template-kit/home-1-pro/"
+                target="_blank"
+                >Gourmet,
+              </a>
+              <a
+                href="https://template-kit.ancorathemes.com/veggie/template-kit/home-1/"
+                target="_blank"
+                >Veggie,
+              </a>
+              <a
+                href="http://template-kit.axiomthemes.com/mounty/template-kit/home1/"
+                target="_blank"
+                >Mounty,
+              </a>
+            </div>
+            <li>
+              Layout von 1-page sites - Landing page (html, css/scss, js/php)
+            </li>
+            <div>
+              Landing Page. Beispiele:
+              <a
+                href="https://plumbing-parts.themerex.net/splash-test/"
+                target="_blank"
+                >Plumbing,
+              </a>
+              <a
+                href="https://theflash.ancorathemes.com/splash/"
+                target="_blank"
+                >Flash,
+              </a>
+              <a href="https://thegig.axiomthemes.com/splash/" target="_blank"
+                >Gig,
+              </a>
+            </div>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Weiterbildung</h2>
+        <div class="education-item">
+          <div class="job-title">
+            Berufsbezogener Sprachkurs mit Zielsprachniveau B2
+          </div>
+          <div class="company">VHS, Wiesbaden, Deutschland</div>
+          <div class="date">07/2024 – 02/2025</div>
+        </div>
+        <div class="education-item">
+          <div class="job-title">Integrationskurs B1 + Orientierungskurs</div>
+          <div class="company">
+            Caritas & Euro-Schulen, Wiesbaden, Deutschland
+          </div>
+          <div class="date">11/2023 – 06/2024</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Ausbildung</h2>
+        <div class="education-item">
+          <div class="job-title">Full-Stack-Entwickler</div>
+          <div class="company">AIT-TR, Berlin, Deutschland</div>
+          <div class="date">09/2025 – 04/2026</div>
+          <div>Technologien: Python, Java, JavaScript (React)</div>
+        </div>
+        <div class="education-item">
+          <div class="job-title">Softwareentwicklung</div>
+          <div class="company">Private Computerakademie „Step IT“, Ukraine</div>
+          <div class="date">06/2018 – 12/2020</div>
+          <div>
+            Technologien: C++, C#, Java, JavaScript (React, Angular + Node.js,
+            Express), PHP
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Studium</h2>
+        <div class="education-item">
+          <div class="job-title">
+            Master für Staatsverwaltung, Fachrichtung: Wirtschaft
+          </div>
+          <div class="company">
+            Staatliche Petro-Mohyla-Universität für Geisteswissenschaften
+            Mykolajiw, Ukraine
+          </div>
+          <div class="date">10/2006 – 10/2007</div>
+        </div>
+        <div class="education-item">
+          <div class="job-title">
+            Master für Politologie, Fachrichtung: Politikwissenschaftler &
+            Lehrer für Sozial- und Geisteswissenschaften
+          </div>
+          <div class="company">
+            Staatliche Petro-Mohyla-Universität für Geisteswissenschaften
+            Mykolajiw, Ukraine
+          </div>
+          <div class="date">09/2001 – 07/2006</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Praktische Erfahrungen ab 2019. GitHub.</h2>
+        <div class="job-title">ReactJS Projekte:</div>
+        <div class="skills-container">
+          <ul class="skill-list">
+            <li>
+              <a
+                href="https://github.com/michw85/react-typescript-firebase"
+                target="_blank"
+                >React+TypeScript+Firebase+Material UI -> Social network
+                MyWay</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/michw85/react-redux-api-currency"
+                target="_blank"
+                >React+Redux+Bootstrap+Antd -> API Currency</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/michw85/resume-mern" target="_blank"
+                >MERN Stack -> Resume</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/michw85/react-resume" target="_blank"
+                >React+Express(Node.js) -> Resume</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/michw85/react-php-crud-booking"
+                target="_blank"
+                >React+PHP+crud -> Booking</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/michw85/react-bootatrap/tree/main/react-bootstrap"
+                target="_blank"
+                >React+Bootstrap -> LandingPage</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/michw85/react-node-resume"
+                target="_blank"
+                >React+Node.js -> Resume</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/michw85/react-firebase-chat"
+                target="_blank"
+                >React+Firebase -> Chat</a
+              >
+            </li>
+            <li>
+              Repository:
+              <a href="https://github.com/michw85" target="_blank">
+                https://github.com/michw85</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Zusätzliche Erfahrung</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Datenbanken</h3>
+            <ul class="skill-list">
+              <li>MySQL, MongoDB</li>
+              <li>phpMyAdmin, mongoose</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Tools</h3>
+            <ul class="skill-list">
+              <li>Github, Jira</li>
+              <li>Adobe XD, Figma</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Zertifikaten</h2>
+        <div class="job-title">Microsoft Imagine Academy:</div>
+        <ul class="skill-list">
+          <li>C# (Working with Non-Relational Data)</li>
+          <li>ADO.Net (Using Data in Software Applications)</li>
+          <li>Database (Database Fundamental)</li>
+          <li>Azure (Data Science and Machine Learning Essentials)</li>
+          <li>HTML5 (HTML5 Application Development Fundamentals)</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Sprachen</h2>
+        <div class="languages">
+          <div class="language-item">✓ Russisch – fließend</div>
+          <div class="language-item">✓ Ukrainisch – fließend</div>
+          <div class="language-item">
+            ✓ Englisch – B1 (technische Dokumentation)
+          </div>
+          <div class="language-item">✓ Deutsch – B2</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Persönliche Eigenschaften</h2>
+        <div class="personal-qualities">
+          <span class="quality">Einfaches Lernen</span>
+          <span class="quality">Kreatives Denken</span>
+          <span class="quality">Positives Denken</span>
+          <span class="quality">Verantwortungsbewusstsein</span>
+          <span class="quality">Disziplin</span>
+          <span class="quality">Ergebnisorientierung</span>
+          <span class="quality">Flexibilität</span>
+          <span class="quality">Teamfähighkeit</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Hobbys und Interessen</h2>
+        <div class="personal-qualities">
+          <span class="quality">Reisen</span>
+          <span class="quality">Lesen</span>
+          <span class="quality">Kochen</span>
+          <span class="quality">Fahrrad fahren</span>
+          <span class="quality">Quiz spielen</span>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
